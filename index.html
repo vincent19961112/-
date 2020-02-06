@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,53 +22,46 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-lg-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="nav-link" href="#explore">explore</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#adventure">adventure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
+        <div class="jumbotron-fluid height100p banner" id="home">
+            <div class="container h100">
+                <div class="contentBox h100">
+                    <div class="col-sm-12">
+                        <h1 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Fluid jumbotron</h1>
+                        <p class="lead" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi in maiores alias omnis expedita velit ea delectus sed. Minus placeat aliquam suscipit quae ipsam quis voluptate nulla recusandae consequuntur accusamus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-
-
-    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
-        <div class="container h100">
-            <h1 class="display-4 h100">Fluid jumbotron</h1>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi in maiores alias omnis expedita velit ea delectus sed. Minus placeat aliquam suscipit quae ipsam quis voluptate nulla recusandae consequuntur accusamus.</p>
-        </div>
-    </div>
 
     <section class="sec1" id="explore">
         <div class="container">
             <div class="row">
-                <div class="offset-sm-2">
+                <div class="offset-sm-3 col-sm-6">
                     <div class="headerText header text-center">
-                        <h2>Explore The World</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia veritatis, saepe autem architecto cumque id pariatur accusamus quidem totam aut unde quas rerum vel fugiat ut aliquid sequi repellendus ullam?</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Explore The World</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia veritatis, saepe autem architecto cumque id pariatur accusamus quidem totam aut unde quas rerum vel fugiat ut aliquid sequi repellendus ullam?</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +69,7 @@
                 <div class="col-sm-4">
                     <div class="placeBox">
                         <div class="imgBx">
-                            <img src="image/img1.jpg" alt="img1" class="img-fliud">
+                            <img src="image/img1.jpg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" alt="img1" class="img-fluid">
                             <div class="content">
                                 <h3>Place Name<br><span>Country Name</span></h3>
                             </div>
@@ -84,7 +79,7 @@
                 <div class="col-sm-4">
                     <div class="placeBox">
                         <div class="imgBx">
-                            <img src="image/img2.jpg" alt="img2" class="img-fliud">
+                            <img src="image/img2.jpg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" alt="img2" class="img-fluid">
                             <div class="content">
                                 <h3>Place Name<br><span>Country Name</span></h3>
                             </div>
@@ -94,7 +89,7 @@
                 <div class="col-sm-4">
                     <div class="placeBox">
                         <div class="imgBx">
-                            <img src="image/img3.jpg" alt="img3" class="img-fliud">
+                            <img src="image/img3.jpg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" alt="img3" class="img-fluid">
                             <div class="content">
                                 <h3>Place Name<br><span>Country Name</span></h3>
                             </div>
@@ -108,67 +103,77 @@
     <section class="sec2" id="adventure">
         <div class="container h-100">
             <div class="contentBox h-100">
-                <h1>Adventure is Everywhere</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit velit beatae dolorum voluptatum quidem dolore, consectetur itaque, debitis magni fugiat accusamus odit alias odio eligendi incidunt doloremque sapiente eius. Eius?</p>
-                <a href="#" class="btn btnD1">Read more</a>
+                <div class="col-sm-12">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Adventure is Everywhere</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit velit beatae dolorum voluptatum quidem dolore, consectetur itaque, debitis magni fugiat accusamus odit alias odio eligendi incidunt doloremque sapiente eius. Eius?</p>
+                    <a href="#" class="btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Read more</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="blog" id="blog">
+    <section class="blog" id="Blog">
         <div class="container">
             <div class="row">
                 <div class="offset-sm-2 col-sm-8">
-                    <h2>Our Latest Post</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt, impedit quae beatae velit illo vel facere! Porro neque delectus nulla placeat aliquid itaque nam, dolor quas eaque, cupiditate nisi!</p>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Our Latest Post</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt, impedit quae beatae velit illo vel facere! Porro neque delectus nulla placeat aliquid itaque nam, dolor quas eaque, cupiditate nisi!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="blogpost">
-                        <div class="imgBx">
-                            <img src="images/img4" alt="img4" class="img-fliud">
+                        <div class="imgBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="image/img4.jpg" alt="img4" class="img-fluid">
                         </div>
                         <div class="content">
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officiis minima? Non quo temporibus, necessitatibus officiis repudiandae placeat quisquam! Libero, iusto architecto vitae reiciendis velit consequuntur
                                 laborum esse sequi.</p>
+                            <a href="#" class="btnD2">Read me</a>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="blogpost">
-                        <div class="imgBx">
-                            <img src="images/img4" alt="img4" class="img-fliud">
+                        <div class="imgBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="image/img4.jpg" alt="img4" class="img-fluid">
                         </div>
                         <div class="content">
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officiis minima? Non quo temporibus, necessitatibus officiis repudiandae placeat quisquam! Libero, iusto architecto vitae reiciendis velit consequuntur
                                 laborum esse sequi.</p>
+                            <a href="#" class="btnD2">Read me</a>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="blogpost">
-                        <div class="imgBx">
-                            <img src="images/img4" alt="img4" class="img-fliud">
+                        <div class="imgBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="image/img4.jpg" alt="img4" class="img-fluid">
                         </div>
                         <div class="content">
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officiis minima? Non quo temporibus, necessitatibus officiis repudiandae placeat quisquam! Libero, iusto architecto vitae reiciendis velit consequuntur
                                 laborum esse sequi.</p>
+                            <a href="#" class="btnD2">Read me</a>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="blogpost">
-                        <div class="imgBx">
-                            <img src="images/img4" alt="img4" class="img-fliud">
+                        <div class="imgBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="image/img4.jpg" alt="img4" class="img-fluid">
                         </div>
                         <div class="content">
                             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda officiis minima? Non quo temporibus, necessitatibus officiis repudiandae placeat quisquam! Libero, iusto architecto vitae reiciendis velit consequuntur
                                 laborum esse sequi.</p>
+                            <a href="#" class="btnD2">Read me</a>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -176,19 +181,19 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="headerText text-center">
-                        <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos natus in nemo amet explicabo veniam aperiam debitis, nisi unde nostrum, nulla pariatur maxime! Fugit reiciendis maxime, eaque vel asperiores dolor.</p>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact Us</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos natus in nemo amet explicabo veniam aperiam debitis, nisi unde nostrum, nulla pariatur maxime! Fugit reiciendis maxime, eaque vel asperiores dolor.</p>
                     </div>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="offset-sm-2 col-sm-8">
-                    <form>
+                    <form data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" name="" class="form-control">
@@ -205,10 +210,10 @@
                             <label>Message</label>
                             <textarea class="form-control textarea" name=""></textarea>
                         </div>
-                        <div class="form-group">
-                            <button class="btn btnD1">send</button>
-                        </div>
                     </form>
+                    <div class="col-sm-12  text-center">
+                        <button class="btnD1">send</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,16 +224,30 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="sci">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100003968530995"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/?tab=km1#inbox"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/?hl=zh-tw"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
+                    <p class="text-center">copyright 2019 Nature / Template by Online Tutorials</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).scroll(function() {
+            $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $(this).height());
+        });
+    </script>
 </body>
 
 </html>
